@@ -1,6 +1,6 @@
 export default class TVmazeService {
 
-  _apiBase = 'http://api.tvmaze.com/schedule?country=US&date=';
+  _apiBase = 'https://api.tvmaze.com/schedule?country=US&date=';
 
     getResource = async (dateMod) => {
         const res = await fetch(`${this._apiBase}${dateMod}`);
